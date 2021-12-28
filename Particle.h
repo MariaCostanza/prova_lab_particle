@@ -31,10 +31,10 @@ public:
   static void PrintParticleType();
   void Print() const;
 
-  int Decay2body(Particle &dau1, Particle &dau2) const; // parte 2
+  int Decay2body(Particle &dau1, Particle &dau2) const; 
 
 private:
-  static const int fMaxNumParticleType = 10; // va messo nel public??? NOOOO
+  static const int fMaxNumParticleType = 10; 
   static ParticleType *fParticleType[fMaxNumParticleType];
 
   static int fNParticleType;
@@ -47,7 +47,7 @@ private:
 
   static int FindParticle(const char *Name);
 
-  void Boost(double bx, double by, double bz); // parte 2
+  void Boost(double bx, double by, double bz); 
 };
 
 #endif
